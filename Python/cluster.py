@@ -12,8 +12,11 @@ Bio.Cluster and the underlying C Clustering Library is described in
 M. de Hoon et al. (2004) https://doi.org/10.1093/bioinformatics/bth078
 """
 
+#defines a hierarchy of numeric abstract base classes which progressively define more operations. 
+#None of the types defined in this module are intended to be instantiated.
 import numbers
 
+#If numpy is not installed on the device, throw an exception
 try:
     import numpy as np
 except ImportError:
